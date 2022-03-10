@@ -468,14 +468,25 @@ link:active {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  cursor: pointer;
 }
-
+.link-social:hover {
+  fill: var(--color-white);
+}
+.link-social:active {
+  fill: var(--color-white);
+}
 .link-soc {
   display: flex;
 
   margin-top: 16px;
   width: 206px;
   height: 44px;
+}
+.link-icons {
+  display: flex;
+
+  justify-content: center;
 }
 .link-size:hover {
   background-color: var(--color-blue);
@@ -488,7 +499,6 @@ link:active {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-
   border-radius: 50% 50%;
 }
 .link-size:last-child {
@@ -511,4 +521,46 @@ link:active {
 }
 .section1 {
   padding-bottom: 94px;
+}
+.cliens {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.company {
+  display: flex;
+}
+.company-size {
+  min-width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 30px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.company-size:last-child {
+  margin-right: 0px;
+}
+.company-setting {
+  width: 106px;
+  height: 60px;
+}
+
+.company-format {
+  display: flex;
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  cursor: pointer;
+}
+.company-format:hover {
+  fill: var(--color-blue);
+}
+.company-format:active {
+  fill: var(--color-blue);
 }
