@@ -36,8 +36,10 @@ ul {
 a {
   text-decoration: none;
 }
+.main-image {
+  background-image: url(/images/background.jpg);
+}
 .title {
-  background: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -465,12 +467,7 @@ link:active {
 .link-social {
   width: 20px;
   height: 20px;
-}
-.asd:hover {
-  fill: #ffffff;
-}
-.asd:active {
-  fill: #ffffff;
+  fill: #afb1b8;
 }
 
 .link-soc {
@@ -491,6 +488,8 @@ link:active {
   width: 44px;
   height: 44px;
   margin-right: 10px;
+
+  border-radius: 50% 50%;
 }
 .link-size:last-child {
   margin-right: 0;
