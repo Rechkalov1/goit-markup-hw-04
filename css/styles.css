@@ -37,7 +37,12 @@ a {
   text-decoration: none;
 }
 .main-image {
-  background-image: url(/images/background.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/background.jpg);
 }
 .title {
   padding-top: 200px;
@@ -224,19 +229,20 @@ link:active {
   color: var(--color-blue);
 }
 .contact-info {
+  display: inline-flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  align-items: center;
 }
 .corection {
   margin-left: 50px;
 }
+
+.contact-info:hover,
 .contact-info:active {
-  color: var(--color-blue);
-}
-.contact-info:hover {
   color: var(--color-blue);
 }
 
@@ -311,12 +317,7 @@ link:active {
 
   color: rgba(255, 255, 255, 0.6);
 }
-.contact-info:active {
-  color: var(--color-blue);
-}
-.contact-info:hover {
-  color: var(--color-blue);
-}
+
 /* End */
 /* Визуализация */
 .container {
@@ -357,12 +358,7 @@ link:active {
   margin-right: 10px;
   cursor: pointer;
 }
-.contact-icon:hover {
-  fill: var(--color-blue);
-}
-.contact-icon:active {
-  fill: var(--color-blue);
-}
+
 .header-list {
   display: flex;
   align-items: center;
@@ -471,11 +467,10 @@ link:active {
   cursor: pointer;
 }
 .link-social:hover {
+  background-color: var(--color-blue);
   fill: var(--color-white);
 }
-.link-social:active {
-  fill: var(--color-white);
-}
+
 .link-soc {
   display: flex;
 
@@ -489,12 +484,12 @@ link:active {
   justify-content: center;
   width: 44px;
   height: 44px;
+  border-radius: 50% 50%;
 }
-.link-size:hover {
+
+.link-icons:hover {
   background-color: var(--color-blue);
-}
-.link-size:active {
-  background-color: var(--color-blue);
+  fill: var(--color-white);
 }
 
 .link-size {
@@ -502,6 +497,7 @@ link:active {
   height: 44px;
   margin-right: 10px;
   border-radius: 50% 50%;
+  cursor: pointer;
 }
 .link-size:last-child {
   margin-right: 0;
@@ -548,6 +544,7 @@ link:active {
 .company-size:last-child {
   margin-right: 0px;
 }
+
 .company-setting {
   width: 106px;
   height: 60px;
@@ -560,9 +557,11 @@ link:active {
   fill: #afb1b8;
   cursor: pointer;
 }
-.company-format:hover {
+.company-size .company-format:hover {
   fill: var(--color-blue);
+  border-color: var(--color-blue);
 }
-.company-format:active {
+.company-size .company-format:active {
   fill: var(--color-blue);
+  border-color: var(--color-blue);
 }
