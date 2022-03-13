@@ -237,6 +237,9 @@ link:active {
   letter-spacing: 0.02em;
   color: var(--main-color);
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
 }
 .corection {
   margin-left: 50px;
@@ -356,9 +359,9 @@ link:active {
   margin-left: auto;
 }
 .contact-icon {
-  fill: var(--main-color);
   margin-right: 10px;
   cursor: pointer;
+  fill: currentColor;
 }
 
 .header-list {
@@ -415,7 +418,6 @@ link:active {
 }
 .soft-skill {
   background: #ffffff;
-  /* material shadow v1 */
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -428,11 +430,56 @@ link:active {
   margin-left: 30px;
 }
 .footer {
+}
+
+.footer-join {
+  margin-left: 70px;
+}
+.footer-links {
+  display: flex;
+  margin-top: 20px;
+}
+.link-join-logo {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: var(--color-white);
+}
+.footer-join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.footer-join-link:hover {
+  background-color: var(--color-blue);
+}
+.footer-join-link:active {
+  background-color: var(--color-blue);
+}
+.join {
+  font-family: var(--font-style);
+
+  font-weight: var(--second-font-weight);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+}
+.footer-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  align-items: baseline;
 }
 /* Стилизация портфолио */
 
@@ -522,8 +569,10 @@ link:active {
 }
 .cliens {
   width: 1200px;
-  padding-left: 15px;
+  padding-top: 94px;
   padding-right: 15px;
+  padding-bottom: 94px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }

@@ -22,38 +22,41 @@
   </head>
   <body>
     <header class="header">
-      <section>
-        <div class="header-box container">
-          <a class="website" href="./index.html"
-            >Web<span class="web1">Studio</span></a
-          >
-          <nav class="site-nav">
-            <ul class="header-list">
-              <li class="header-item">
-                <a class="link" href="./index.html">Студия</a>
-              </li>
-              <li class="header-item">
-                <a class="link current" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="header-item">
-                <a class="link" href="Контакты">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="header-wrapper">
-            <li class="header-row">
-              <a class="contact-info" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+      <div class="header-box container">
+        <a class="website" href="./index.html"
+          >Web<span class="web1">Studio</span></a
+        >
+        <nav class="site-nav">
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="link current" href="./index.html">Студия</a>
             </li>
-            <li class="corection">
-              <a class="contact-info" href="tel:+380961111111"
-                >+38 096111 11 11</a
-              >
+            <li class="header-item">
+              <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="link" href="Контакты">Контакты</a>
             </li>
           </ul>
-        </div>
-      </section>
+        </nav>
+        <ul class="header-wrapper">
+          <li class="header-row">
+            <a class="contact-info" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="corection">
+            <a class="contact-info" href="tel:+380961111111">
+              <svg class="contact-icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="main-foto">
       <section class="main-container">
@@ -219,25 +222,57 @@
       </section>
     </main>
     <footer class="background">
-      <div class="footer">
-        <a class="website" href="./index.html"
-          >Web<span class="web">Studio</span></a
-        >
-        <address class="adress">
-          <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul class="adress-item">
-            <li class="adress-txt">
-              <a class="contact-down-info" href="mailto:info@example.com">
-                info@example.com</a
-              >
+      <div class="footer-container">
+        <div class="footer">
+          <a class="website" href="./index.html"
+            >Web<span class="web">Studio</span></a
+          >
+
+          <address class="adress">
+            <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="adress-item">
+              <li class="adress-txt">
+                <a class="contact-down-info" href="mailto:info@example.com">
+                  info@example.com</a
+                >
+              </li>
+              <li class="adress-txt">
+                <a class="contact-down-info" href="tel:+380991111111">
+                  +38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-join">
+          <h2 class="join">Присоединяйтесь</h2>
+          <ul class="footer-links">
+            <li>
+              <a class="footer-join-link">
+                <svg class="link-join-logo">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
             </li>
-            <li class="adress-txt">
-              <a class="contact-down-info" href="tel:+380991111111">
-                +38 099 111 11 11</a
-              >
+            <li>
+              <a class="footer-join-link">
+                <svg class="link-join-logo">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="footer-join-link">
+                <svg class="link-join-logo">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="footer-join-link">
+                <svg class="link-join-logo">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
