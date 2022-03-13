@@ -42,7 +42,8 @@ a {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/background.jpg);
+    url(../images/background.jpg);
+  background-color: var(--main-color);
 }
 .title {
   padding-top: 200px;
@@ -260,6 +261,7 @@ link:active {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .adress {
   font-style: normal;
   margin-top: 20px;
@@ -463,12 +465,8 @@ link:active {
 .link-social {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+
   cursor: pointer;
-}
-.link-social:hover {
-  background-color: var(--color-blue);
-  fill: var(--color-white);
 }
 
 .link-soc {
@@ -484,9 +482,11 @@ link:active {
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50% 50%;
-}
+  border-radius: 50%;
 
+  fill: currentColor;
+}
+.link-icons:focus,
 .link-icons:hover {
   background-color: var(--color-blue);
   fill: var(--color-white);
@@ -540,28 +540,39 @@ link:active {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  fill: #afb1b8;
+
+  cursor: pointer;
 }
 .company-size:last-child {
   margin-right: 0px;
 }
 
 .company-setting {
-  width: 106px;
-  height: 60px;
+  color: currentColor;
 }
 
 .company-format {
   display: flex;
   width: 106px;
   height: 60px;
-  fill: #afb1b8;
+  color: currentColor;
   cursor: pointer;
 }
-.company-size .company-format:hover {
+
+.company-size:focus {
   fill: var(--color-blue);
   border-color: var(--color-blue);
 }
-.company-size .company-format:active {
+.company-format:focus {
+  fill: var(--color-blue);
+  border-color: var(--color-blue);
+}
+.company-format:hover {
+  fill: var(--color-blue);
+  border-color: var(--color-blue);
+}
+.company-size:hover {
   fill: var(--color-blue);
   border-color: var(--color-blue);
 }
