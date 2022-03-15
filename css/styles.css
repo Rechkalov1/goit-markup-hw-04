@@ -11,6 +11,8 @@ font-family: 'Roboto', sans-serif;
   --second-color: #212121;
   --color-blue: #2196f3;
   --color-white: #ffffff;
+  --shadow-item: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 body {
   font-family: var(--font-style);
@@ -44,8 +46,11 @@ a {
     ),
     url(../images/background.jpg);
   background-color: var(--main-color);
+  max-width: 1600px;
+  text-align: center;
 }
 .title {
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -150,12 +155,14 @@ a {
   color: var(--color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--color-blue);
 }
 .services-txt:focus {
   color: var(--color-white);
   background: var(--color-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--color-blue);
 }
 .services-txt {
   font-family: var(--font-style);
@@ -167,6 +174,7 @@ a {
   border-radius: 4px;
   cursor: pointer;
   padding: 6px 22px;
+  border: 1px solid #eeeeee;
 }
 .services-txt.current {
   background-color: var(--color-blue);
@@ -434,8 +442,6 @@ link:active {
 .page-skill:not(:first-child) {
   margin-left: 30px;
 }
-.footer {
-}
 
 .footer-join {
   margin-left: 70px;
@@ -459,6 +465,12 @@ link:active {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+.footer-box {
+  margin-right: 10px;
+}
+.footer-box:nth-child(4) {
+  margin-right: 0px;
 }
 .footer-join-link:hover {
   background-color: var(--color-blue);
@@ -500,7 +512,6 @@ link:active {
   padding-bottom: 94px;
 }
 .prtf-marg {
-  border: 1px solid #eeeeee;
   background: #f5f4fa;
   border-radius: 4px;
   margin-right: 8px;
@@ -515,14 +526,16 @@ link:active {
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
+
 .porfolion-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.porfolion-item:active {
+.porfolion-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .link-social {
   width: 20px;
   height: 20px;
@@ -545,7 +558,7 @@ link:active {
   height: 44px;
   border-radius: 50%;
 
-  fill: currentColor;
+  fill: #afb1b8;
 }
 .link-icons:focus,
 .link-icons:hover {
@@ -592,13 +605,11 @@ link:active {
 }
 .company {
   display: flex;
+  justify-content: center;
 }
 .company-size {
-  min-width: 170px;
+  width: 170px;
   height: 92px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
   margin-right: 30px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -611,14 +622,16 @@ link:active {
   margin-right: 0px;
 }
 
-.company-setting {
+.compamy-setting {
   color: currentColor;
 }
 
 .company-format {
   display: flex;
-  width: 106px;
-  height: 60px;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
   color: currentColor;
   cursor: pointer;
 }
