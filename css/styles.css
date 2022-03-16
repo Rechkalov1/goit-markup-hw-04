@@ -528,15 +528,11 @@ link:active {
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
-/* .portfolion-cart:hover,
-.portfolion-cart:focus{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);} */
-
-.porfolion-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolion-cart {
+  display: block;
 }
-.porfolion-item:focus {
+.portfolion-cart:hover,
+.portfolion-cart:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
