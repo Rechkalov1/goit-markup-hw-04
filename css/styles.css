@@ -48,6 +48,7 @@ a {
   background-color: var(--main-color);
   max-width: 1600px;
   text-align: center;
+  background-position: center;
 }
 .title {
   max-width: 1600px;
@@ -165,6 +166,7 @@ a {
   border-color: var(--color-blue);
 }
 .services-txt {
+  background-color: #f5f4fa;
   font-family: var(--font-style);
   font-weight: 500;
   font-size: 16px;
@@ -526,6 +528,9 @@ link:active {
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
+/* .portfolion-cart:hover,
+.portfolion-cart:focus{box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);} */
 
 .porfolion-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -595,17 +600,12 @@ link:active {
   padding-bottom: 94px;
 }
 .cliens {
-  width: 1200px;
   padding-top: 94px;
   padding-right: 15px;
   padding-bottom: 94px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 .company {
   display: flex;
-  justify-content: center;
 }
 .company-size {
   width: 170px;
@@ -625,13 +625,18 @@ link:active {
 }
 
 .compamy-setting {
+  width: 106px;
+  height: 60px;
   color: currentColor;
 }
 
 .company-format {
   display: flex;
-  width: 106px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
 
   color: currentColor;
   cursor: pointer;
